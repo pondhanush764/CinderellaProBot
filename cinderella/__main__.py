@@ -78,7 +78,7 @@ GDPR = []
 
 START_IMG = os.environ.get('START_IMG', None)
 if START_IMG is None:
-    img = "https://telegra.ph/file/511ad504656e712b88235.jpg"
+    img = "https://telegra.ph/file/6f3aa9464e81135326de5.jpg"
 else:
   img = START_IMG    
     
@@ -179,8 +179,9 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="🤝Help",callback_data="help_back"),InlineKeyboardButton(text="Founder👿",url="https://t.me/THE_BOSS_OF_TELEGRAM")]]
-    keyboard += [[InlineKeyboardButton(text="🌐Connect Group", callback_data="main_connect"),InlineKeyboardButton(text="⚜️Add Me⚜️",url="t.me/{}?startgroup=true".format(bot.username))]]
+    keyboard = [[InlineKeyboardButton(text="Help🤗",callback_data="help_back"),InlineKeyboardButton(text="Founder👿",url="https://t.me/THE_BOSS_OF_TELEGRAM")]]
+    keyboard += [[InlineKeyboardButton(text="Connect Group😇", callback_data="main_connect"),InlineKeyboardButton(text="Add Me😌",url="t.me/{}?startgroup=true".format(bot.username))]]
+    keyboard += [[InlineKeyboardButton(text="Global logs🥰",url="https://t.me/kittygbanlogs"),InlineKeyboardButton(text="Kitty Support😍",url="https://t.me/kittysupport")]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
                                          reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
@@ -281,7 +282,7 @@ def get_help(bot: Bot, update: Update):
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="⚜️Help",url="t.me/{}?start=help".format(bot.username))],  
-                                                [InlineKeyboardButton(text="🛡Contact Creator",url="https://t.me/Surv_ivor")]]))
+                                                [InlineKeyboardButton(text="🛡Contact Creator",url="https://t.me/THE_BOSS_OF_TELEGRAM")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
