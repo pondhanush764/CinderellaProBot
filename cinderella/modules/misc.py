@@ -11,7 +11,7 @@ from telegram.utils.helpers import mention_html
 from cinderella import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS
 from cinderella.__main__ import STATS, USER_INFO, TOKEN
 from cinderella.modules.disable import DisableAbleCommandHandler
-from cinderella.modules.helper_funcs.chat_status import user_admin, sudo_plus
+from cinderella.modules.helper_funcs.chat_status import user_admin, sudo_plus, dev_plus
 from cinderella.modules.helper_funcs.extraction import extract_user
 
 MARKDOWN_HELP = f"""
@@ -86,7 +86,7 @@ def gifid(bot: Bot, update: Update):
         update.effective_message.reply_text("Please reply to a gif to get its ID.")
 
 @run_async
-@user_admin
+@dev_plus
 def echo(bot: Bot, update: Update):
     args = update.effective_message.text.split(None, 1)
     message = update.effective_message
@@ -127,7 +127,7 @@ __help__ = """
 
 ID_HANDLER = DisableAbleCommandHandler("id", get_id, pass_args=True)
 GIFID_HANDLER = DisableAbleCommandHandler("gifid", gifid)
-ECHO_HANDLER = DisableAbleCommandHandler("echo", echo, filters=Filters.group)
+ECHO_HANDLER = DisableAbleCommandHandler("send", echo, filters=Filters.group)
 MD_HELP_HANDLER = CommandHandler("markdownhelp", markdown_help, filters=Filters.private)
 STATS_HANDLER = CommandHandler("stats", stats)
 
