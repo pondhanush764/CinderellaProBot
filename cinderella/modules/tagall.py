@@ -7,7 +7,7 @@ from telethon import events
 
 
 @run_async
-def @all(bot: Bot, update: Update):
+def all(bot: Bot, update: Update):
 async def _(event):
     if event.fwd_from:
         return 
@@ -27,5 +27,5 @@ __help__ = """
 - /tagall : Tag everyone in a chat
 """
 
-TAGALL_HANDLER = DisableAbleCommandHandler("@all", @all)
+TAGALL_HANDLER = DisableAbleCommandHandler("@all", all)
 dispatcher.add_handler(TAGALL_HANDLER)
