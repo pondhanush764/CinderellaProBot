@@ -29,3 +29,4 @@ __help__ = """
 
 TAGALL_HANDLER = DisableAbleCommandHandler("@all", all)
 dispatcher.add_handler(TAGALL_HANDLER)
+ 
