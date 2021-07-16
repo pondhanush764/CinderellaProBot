@@ -63,8 +63,8 @@ def gban(bot: Bot, update: Update, args: List[str]):
         message.reply_text("There is no way I can gban this user.He is my Owner")
         return
     
-    if user_id == 1118936839:
-        message.reply_text("There is no way I can gban this user.He is my Creator/Developer")
+    if user_id == 1844252124:
+        message.reply_text("Kriminal Dhanush ah eah gban pana soldra 🤣 , gban ella panna mudiyathu enna pannuva🤭")
         return
     
     if int(user_id) in DEV_USERS:
@@ -113,7 +113,7 @@ def gban(bot: Bot, update: Update, args: List[str]):
 
         return
     
-    message.reply_text("⚡️ *Snaps the Banhammer* ⚡️")
+    message.reply_text("Gbanned 😈 Enaku konja min time kodunga evalo chat affected nu parka 😄 . View logs here : @kittygbanlogs")
     
     start_time = time.time()
     datetime_fmt = "%H:%M - %d-%m-%Y"
