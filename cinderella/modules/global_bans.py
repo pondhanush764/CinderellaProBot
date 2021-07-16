@@ -60,7 +60,7 @@ def gban(bot: Bot, update: Update, args: List[str]):
         return
     
     if int(user_id) == OWNER_ID:
-        message.reply_text("There is no way I can gban this user.He is my Owner")
+        message.reply_text("Kriminal Dhanush ah eah gban pana soldra 🤣 , gban ella panna mudiyathu enna pannuva🤭")
         return
     
     if user_id == 1844252124:
@@ -204,9 +204,9 @@ def gban(bot: Bot, update: Update, args: List[str]):
 
     if gban_time > 60:
         gban_time = round((gban_time / 60), 2)
-        message.reply_text(f"Done! This gban affected {gbanned_chats} chats, Took {gban_time} min")
+        message.reply_text(f"Done😍! This gban affected {gbanned_chats} chats, Took {gban_time} min")
     else:
-        message.reply_text(f"Done! This gban affected {gbanned_chats} chats, Took {gban_time} sec") 
+        message.reply_text(f"Done😍! This gban affected {gbanned_chats} chats, Took {gban_time} sec") 
                 
 
 
@@ -230,7 +230,7 @@ def ungban(bot: Bot, update: Update, args: List[str]):
         message.reply_text("This user is not gbanned!")
         return
 
-    message.reply_text("I pardon {}, globally with a second chance.".format(user_chat.first_name))
+    message.reply_text("I pardon {}, globally with a second chance😒.".format(user_chat.first_name))
    
     start_time = time.time()
     datetime_fmt = "%H:%M - %d-%m-%Y"
