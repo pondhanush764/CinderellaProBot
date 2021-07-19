@@ -142,4 +142,4 @@ dispatcher.add_handler(eval_handler)
 dispatcher.add_handler(exec_handler)
 dispatcher.add_handler(clear_handler)
 
-__mod_name__ = "Eval Module"
+__mod_name__ = "Eval"
