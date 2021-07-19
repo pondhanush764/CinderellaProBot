@@ -65,7 +65,7 @@ __help__ = """
 - /ping :get ping time of bot to telegram server
 - /uptime: Find last service update time
 """
-__mod_name__ = "PING"
+__mod_name__ = "Ping"
 
 PING_HANDLER = DisableAbleCommandHandler("ping", ping)
 UPTIME_HANDLER = DisableAbleCommandHandler("uptime", uptime)
