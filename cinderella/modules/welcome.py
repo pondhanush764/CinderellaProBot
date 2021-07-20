@@ -145,7 +145,7 @@ def new_member(bot: Bot, update: Update):
             
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
-                update.effective_message.reply_text("Whoa! A member of the Heroes Association just joined!")
+                update.effective_message.reply_text("Wtf😳😳😳😳 no way . My dev has entered😍😍😍😍 . omg omg 🥰🥰 . Here after this group will be double active 🤗🤗")
                 
             # Welcome Sudos
             elif new_mem.id in SUDO_USERS:
@@ -165,7 +165,7 @@ def new_member(bot: Bot, update: Update):
             # Make bot greet admins
             elif new_mem.id == bot.id:
                 update.effective_message.reply_text("Hey {}, I'm {}! Thank you for adding me to {}" 
-                " and be sure to check /help in PM for more commands and tricks!".format(user.first_name, bot.first_name, chat_name))
+                " and be sure to check /help in PM for more commands and tricks🤗!".format(user.first_name, bot.first_name, chat_name))
                 bot.send_message(
                     MESSAGE_DUMP,
                     "I have been added to {} with \nID: <pre>{}</pre>".format(
@@ -249,7 +249,7 @@ def left_member(bot: Bot, update: Update):
            
             # Give the owner a special goodbye
             if left_mem.id == OWNER_ID:
-                update.effective_message.reply_text("Oi! Genos! My Owner left..")
+                update.effective_message.reply_text("Dai😡 enna da panivaichirukenha enga owner eah left ayitar😪")
                 return
        
             # if media goodbye, use appropriate function for it
@@ -321,15 +321,15 @@ def welcome(bot: Bot, update: Update, args: List[str]):
     elif len(args) >= 1:
         if args[0].lower() in ("on", "yes"):
             sql.set_welc_preference(str(chat.id), True)
-            update.effective_message.reply_text("I'll be polite!")
+            update.effective_message.reply_text("I'll be polite😪!")
 
         elif args[0].lower() in ("off", "no"):
             sql.set_welc_preference(str(chat.id), False)
-            update.effective_message.reply_text("I'm sulking, not saying hello anymore.")
+            update.effective_message.reply_text("I'm sulking, not saying hello anymore🙁.")
 
         else:
             # idek what you're writing, say yes or no
-            update.effective_message.reply_text("I understand 'on/yes' or 'off/no' only!")
+            update.effective_message.reply_text("I understand 'on/yes' or 'off/no' only🥱!")
 
 @run_async
 @user_admin
@@ -427,7 +427,7 @@ def set_goodbye(bot: Bot, update: Update) -> str:
         return ""
 
     sql.set_custom_gdbye(chat.id, content or text, data_type, buttons)
-    msg.reply_text("Successfully set custom goodbye message!")
+    msg.reply_text("Successfully set custom goodbye message😍!")
     return "<b>{}:</b>" \
            "\n#SET_GOODBYE" \
            "\n<b>Admin:</b> {}" \
@@ -441,7 +441,7 @@ def reset_goodbye(bot: Bot, update: Update) -> str:
     chat = update.effective_chat  # type: Optional[Chat]
     user = update.effective_user  # type: Optional[User]
     sql.set_custom_gdbye(chat.id, sql.DEFAULT_GOODBYE, sql.Types.TEXT)
-    update.effective_message.reply_text("Successfully reset goodbye message to default!")
+    update.effective_message.reply_text("Successfully reset goodbye message to default😒!")
     return "<b>{}:</b>" \
            "\n#RESET_GOODBYE" \
            "\n<b>Admin:</b> {}" \
@@ -468,7 +468,7 @@ def safemode(bot: Bot, update: Update, args: List[str]) -> str:
         elif args[0].lower() in ("on", "yes"):
              sql.set_welcome_mutes(chat.id, "on")
              msg.reply_text("I will now mute people when they join and"
-                           " click on the button to be unmuted.")
+                           " click on the button to be unmuted🤗.")
              return "<b>{}:</b>" \
                     "\n#SAFE_MODE" \
                     "\n<b>• Admin:</b> {}" \
@@ -516,7 +516,7 @@ def clean_welcome(bot: Bot, update: Update, args: List[str]) -> str:
                                                                           mention_html(user.id, user.first_name))
     else:
         # idek what you're writing, say yes or no
-        update.effective_message.reply_text("I understand 'on/yes' or 'off/no' only!")
+        update.effective_message.reply_text("I understand 'on/yes' or 'off/no' only🥱!")
         return ""
 
 @run_async
@@ -536,7 +536,7 @@ def del_joined(bot: Bot, update: Update, args: List[str]) -> str:
 
     if args[0].lower() in ("on", "yes"):
         sql.set_del_joined(str(chat.id), True)
-        update.effective_message.reply_text("I'll try to delete old joined messages!")
+        update.effective_message.reply_text("I'll try to delete old joined messages🙁!")
         return "<b>{}:</b>" \
                "\n#CLEAN_WELCOME" \
                "\n<b>Admin:</b> {}" \
@@ -544,7 +544,7 @@ def del_joined(bot: Bot, update: Update, args: List[str]) -> str:
                                                                          mention_html(user.id, user.first_name))
     elif args[0].lower() in ("off", "no"):
         sql.set_del_joined(str(chat.id), False)
-        update.effective_message.reply_text("I won't delete old joined messages.")
+        update.effective_message.reply_text("I won't delete old joined messages.😴")
         return "<b>{}:</b>" \
                "\n#CLEAN_WELCOME" \
                "\n<b>Admin:</b> {}" \
