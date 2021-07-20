@@ -349,7 +349,7 @@ def unban(bot: Bot, update: Update, args: List[str]) -> str:
         return ""
 
     chat.unban_member(user_id)
-    message.reply_text("Yep, this user can join!")
+    message.reply_text("Unbanned😒 Tell that idiot to join again🥱")
 
     log = "<b>{}:</b>" \
           "\n#UNBANNED" \
@@ -395,7 +395,7 @@ def selfunban(bot: Bot, update: Update, args: List[str]) -> str:
         return
 
     chat.unban_member(user.id)
-    message.reply_text("Yep, I have unbanned you.")
+    message.reply_text("Han , I have unbanned you🤗")
 
     log = (f"<b>{html.escape(chat.title)}:</b>\n"
            f"#UNBANNED\n"
