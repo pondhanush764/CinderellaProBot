@@ -1,9 +1,8 @@
 JOKE_STRINGS = (
     "Where do you think you're going?",
     "Huh? what? did they get away?",
-    "ZZzzZZzz... Huh? what? oh, just them again, nevermind.",
-    "Get back here!",
-    "Not so fast...",
+    "pirappu oru murai😭\nirappu oru murai😢😢\nvazhkai oru murai🥲\nbut sappadu mattum daily 3 murai😂🤣\nnamaku soruthan mukkiyam🤣🤣",
+    "Sir: yenda home work pannala😡?\nBoy: current illa sir🥲.\nSir: handle use panna vendiyathu thane😒!\nBoy: theeppetti illa sir😞.\nSir: yenda illa🤨?\nBoy:irunthuchi samy roomla irunthuchi😌.\nSir:yenda edukkala🤬?\nBoy: kulikkala sir🥴.\nSir: yenda kulikkala😬?\nBoy: motor work akala sir🥶.\nSir: yenda work akala🤥?\nBoy: yethana vatti solrathu current illa sir🤥🥱😂!",                                                                                
     "Look out for the wall!",
     "Don't leave me alone with them!!",
     "You run, you die.",
