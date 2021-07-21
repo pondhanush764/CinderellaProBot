@@ -16,8 +16,8 @@ normiefont = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q
 weebyfont = ['卂','乃','匚','刀','乇','下','厶','卄','工','丁','长','乚','从','𠘨','口','尸','㔿','尺','丂','丅','凵','リ','山','乂','丫','乙']
 
 @run_async
-def runs(bot: Bot, update: Update):
-    update.effective_message.reply_text(random.choice(fun_strings.RUN_STRINGS))
+def joke(bot: Bot, update: Update):
+    update.effective_message.reply_text(random.choice(fun_strings.JOKE_STRINGS))
 
 
 @run_async
@@ -169,7 +169,7 @@ def shout(bot: Bot, update: Update, args: List[str]):
       
 
 __help__ = """
- - /runs: reply a random string from an array of replies.
+ - /joke: quick tell an tamil joke
  - /slap: slap a user, or get slapped if not a reply.
  - /shrug : get shrug XD.
  - /table : get flip/unflip :v.
@@ -183,7 +183,7 @@ __help__ = """
  - /shout <word>: shout the specified word in the chat.
 """
 
-RUNS_HANDLER = DisableAbleCommandHandler("runs", runs)
+JOKE_HANDLER = DisableAbleCommandHandler("joke", joke)
 SLAP_HANDLER = DisableAbleCommandHandler("slap", slap, pass_args=True)
 ROLL_HANDLER = DisableAbleCommandHandler("roll", roll)
 TOSS_HANDLER = DisableAbleCommandHandler("toss", toss)
@@ -196,7 +196,7 @@ JUDGE_HANDLER = DisableAbleCommandHandler("judge", judge)
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify, pass_args=True)
 SHOUT_HANDLER = DisableAbleCommandHandler("shout", shout, pass_args=True)
 
-dispatcher.add_handler(RUNS_HANDLER)
+dispatcher.add_handler(JOKE_HANDLER)
 dispatcher.add_handler(SLAP_HANDLER)
 dispatcher.add_handler(ROLL_HANDLER)
 dispatcher.add_handler(TOSS_HANDLER)
@@ -210,6 +210,6 @@ dispatcher.add_handler(WEEBIFY_HANDLER)
 dispatcher.add_handler(SHOUT_HANDLER)
 
 __mod_name__ = "Fun"
-__command_list__ = ["runs", "slap", "roll", "toss", "shrug", "bluetext", "rlg", "decide", "table", "judge", "weebify", "shout"]
-__handlers__ = [RUNS_HANDLER, SLAP_HANDLER, ROLL_HANDLER, TOSS_HANDLER, SHRUG_HANDLER, BLUETEXT_HANDLER, RLG_HANDLER,
+__command_list__ = ["joke", "slap", "roll", "toss", "shrug", "bluetext", "rlg", "decide", "table", "judge", "weebify", "shout"]
+__handlers__ = [JOKE_HANDLER, SLAP_HANDLER, ROLL_HANDLER, TOSS_HANDLER, SHRUG_HANDLER, BLUETEXT_HANDLER, RLG_HANDLER,
                 DECIDE_HANDLER, TABLE_HANDLER, JUDGE_HANDLER, WEEBIFY_HANDLER, SHOUT_HANDLER]
