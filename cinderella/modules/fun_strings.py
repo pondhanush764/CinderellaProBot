@@ -35,7 +35,7 @@ JOKE_STRINGS = (
     "Legend has it, they're still running.",
     "Keep it up, not sure we want you here anyway.",
     "You're a wiza- Oh. Wait. You're not Harry, keep moving.",
-    "NO RUNNING IN THE HALLWAYS!",
+    "Teacher: 1st comes SUN or MOON.?\nLKG boy: Moon than 1st varum☺️\nTeacher: How🙄?\nLKG boy: Honey MOON than 1st,SON lam next than😂..\nTeacher:🙄🙄.",
     "Hasta la vista, baby.",
     "Who let the dogs out?",
     "It's funny, because no one cares.",
