@@ -1,4 +1,4 @@
-RUN_STRINGS = (
+JOKE_STRINGS = (
     "Where do you think you're going?",
     "Huh? what? did they get away?",
     "ZZzzZZzz... Huh? what? oh, just them again, nevermind.",
