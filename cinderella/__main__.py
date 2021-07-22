@@ -28,25 +28,27 @@ from cinderella.modules.connection import connect_button
 
 PM_START_TEXT = """
 _Vanakkam🤗_ *{}*
-_My name is_ *{}*\n_One of the Most Powerfull Telegram ProBot to Manage Your Groups,feel free to add to your groups. We updated many tamil fun features. hit /help and check to that!!_
+_My name is_ *{}*\n_One of the Most Powerfull Telegram ProBot to Manage Your Groups🤗,feel free to add to your groups!!_
+_And mainly Created for Tamil users❤️. Many Tamil Fun Tools are there😋. You can check with /help ❣️!_
 _Created by_ [{}](tg://user?id={})
 """
 
 
 HELP_STRINGS = """
-Hey there! My name is [Kitty]("https://telegra.ph/file/1deb171608d1bf5743fde.jpg").
-I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
-the things I can help you with some many tamil fun features. 
+Hey there! My name is [Kitty](https://telegra.ph/file/1deb171608d1bf5743fde.jpg)🥰.
+I'm a modular group management bot with a few fun extras😋! And I can help you with some tamil fun features💥 \
+I am mainly made for Tamil users to Enjoy me ❤️ because here all Tamil Fun features are there😋. Plx check it😇 \
+And you please check down for some commands🤗. 
 *Main* commands available:
- 💠 - /start: start the bot
- 💠 - /help: PM's you this message.
- 💠 - /help <module name>: PM's you info about that module.
- 💠 - /source: Information about my source.
+ 💠 - /start: start the bot❤️
+ 💠 - /help: PM's you this message😅.
+ 💠 - /help <module name>: PM's you info about that module😇.
+ 💠 - /source: Information about my source🤫.
  💠 - /settings:
-   🔹 - in PM: will send you your settings for all supported modules.
-   🔹 - in a group: will redirect you to pm, with all that chat's settings.
+   🔹 - in PM: will send you your settings for all supported modules🤗.
+   🔹 - in a group: will redirect you to pm, with all that chat's settings🙂.
 {}
-And the following:
+And the following👇:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 
@@ -59,7 +61,7 @@ def vercheck() -> str:
 
 SOURCE_STRING = """
 🔱I am Private Source buddy😅
-🔱If you want to clone me contact my [master](https://t.me/THE_BOSS_OF_TELEGRAM)
+🔱If you want to clone me contact my [master](https://t.me/THE_BOSS_OF_TELEGRAM)🤗
 🔱Powered by [KittySupport](t.me/kittysupport)
 """
 
