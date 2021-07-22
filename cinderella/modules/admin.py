@@ -593,4 +593,4 @@ dispatcher.add_handler(CHAT_PIC_HANDLER)
 dispatcher.add_handler(DEL_CHAT_PIC_HANDLER)
 
 
-__mod_name__ = "Admins"
+__mod_name__ = "Admins💢"
