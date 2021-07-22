@@ -27,16 +27,16 @@ from cinderella.modules.connection import connect_button
 
 
 PM_START_TEXT = """
-_Hello_ *{}*
-_My name is_ *{}*\n_A Powerful Telegram ProBot to Manage Your Groups,feel free to add to your groups!!_
-_Maintained by_ [{}](tg://user?id={})
+_Vanakkam🤗_ *{}*
+_My name is_ *{}*\n_One of the Most Powerfull Telegram ProBot to Manage Your Groups,feel free to add to your groups. We updated many tamil fun features. hit /help and check to that!!_
+_Created by_ [{}](tg://user?id={})
 """
 
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
+Hey there! My name is [Kitty]("https://telegra.ph/file/1deb171608d1bf5743fde.jpg").
 I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
-the things I can help you with.
+the things I can help you with some many tamil fun features. 
 *Main* commands available:
  💠 - /start: start the bot
  💠 - /help: PM's you this message.
@@ -58,7 +58,9 @@ def vercheck() -> str:
 
 
 SOURCE_STRING = """
-⚡I am private🥱 If you want to clone me contact my [master](https://t.me/THE_BOSS_OF_TELEGRAM)
+🔱I am Private Source buddy😅
+🔱If you want to clone me contact my [master](https://t.me/THE_BOSS_OF_TELEGRAM)
+🔱Powered by [KittySupport](t.me/kittysupport)
 """
 
 
