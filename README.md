@@ -1,4 +1,4 @@
-### @kittyprobot // http://www.telegram.dog/CinderellaProBot
+### @kittyprobot // http://www.telegram.dog/Kittyprobot
 > with HunterxHunter theme.
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)  
