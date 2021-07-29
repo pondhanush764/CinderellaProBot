@@ -10,13 +10,13 @@ from telegram.error import BadRequest, TelegramError
 from telegram.ext import run_async, CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
-import cinderella.modules.sql.global_bans_sql as sql
-from cinderella import dispatcher, OWNER_ID, DEV_USERS, SUDO_USERS, SUPPORT_USERS, WHITELIST_USERS, GBAN_LOGS, STRICT_GBAN, spam_watch
-from cinderella.modules.helper_funcs.chat_status import user_admin, is_user_admin
-from cinderella.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from cinderella.modules.helper_funcs.filters import CustomFilters
-from cinderella.modules.helper_funcs.misc import send_to_list
-from cinderella.modules.sql.users_sql import get_all_chats
+import MashaRoBot.modules.sql.global_bans_sql as sql
+from MashaRoBot import dispatcher, OWNER_ID, DEV_USERS, SUDO_USERS, SUPPORT_USERS, WHITELIST_USERS, GBAN_LOGS, STRICT_GBAN, spam_watch
+from MashaRoBot.modules.helper_funcs.chat_status import user_admin, is_user_admin
+from MashaRoBot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from MashaRoBot.modules.helper_funcs.filters import CustomFilters
+from MashaRobot.modules.helper_funcs.misc import send_to_list
+from MashaRoBot.modules.sql.users_sql import get_all_chats
 
 GBAN_ENFORCE_GROUP = 6
 
