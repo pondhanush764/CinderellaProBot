@@ -184,7 +184,7 @@ def send_start(bot, update):
 
     keyboard = [[InlineKeyboardButton(text="Help🤗",callback_data="help_back"),InlineKeyboardButton(text="Founder👿",url="https://t.me/THE_BOSS_OF_TELEGRAM")]]
     keyboard += [[InlineKeyboardButton(text="Connect Group😇", callback_data="main_connect"),InlineKeyboardButton(text="Add Me😌",url="t.me/{}?startgroup=true".format(bot.username))]]
-    keyboard += [[InlineKeyboardButton(text="Global logs🥰",url="https://t.me/kittygbanlogs"),InlineKeyboardButton(text="Kitty Support😍",url="https://t.me/kittysupport")]]
+    keyboard += [[InlineKeyboardButton(text="Team_VO🥰",url="https://t.me/Team_vo_proofs"),InlineKeyboardButton(text="💞Anbe aaruyire💞",url="https://t.me/anbe_aaruyire")]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
                                          reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
