@@ -183,7 +183,7 @@ def send_start(bot, update):
     text = PM_START_TEXT
 
     keyboard = [[InlineKeyboardButton(text="Help🤗",callback_data="help_back"),InlineKeyboardButton(text="Founder👿",url="https://t.me/lovekabaddi")]]
-    keyboard += [[InlineKeyboardButton(text="Connect Group😇", callback_data="main_connect"),InlineKeyboardButton(text="Add Me😌",url="t.me/{}?startgroup=true".format(bot.username))]]
+    keyboard += [[InlineKeyboardButton(text="Connect Group😇", callback_data="main_connect"),InlineKeyboardButton(text="Add Me😌",url="t.me/kuttymaprobot?startgroup=true".format(bot.username))]]
     keyboard += [[InlineKeyboardButton(text="Chat Box",url="https://t.me/tamil_chatbox"),InlineKeyboardButton(text="நண்பர்களின் நகரம்༆༒︎",url="https://t.me/friends_nagaram")]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
